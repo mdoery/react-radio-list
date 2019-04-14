@@ -7,6 +7,9 @@ class FancyNames extends React.Component {
 	}
 
 	handleOptionChange = changeEvent => {
+		// Do NOT preventDefault. If you call this method, it prevents the radio button from displaying changed state when the user clicks it.
+		// The radio buttons will then show up empty (none checked) upon clicking, despite the fact that this class is re-rendered with the correct props!!
+		// changeEvent.preventDefault();
 		this.props.updateRatedNames({
 			value: changeEvent.target.value, rating: changeEvent.target.value, name: this.props.name
 		});
