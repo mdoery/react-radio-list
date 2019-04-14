@@ -8,7 +8,7 @@ When the user clicks a radio button, the changed value is lifted up through seve
 
 Here is a view:
 
-[view](https://raw.githubusercontent.com/mdoery/react-radio-list/master/react-radio-list.png)
+![view](https://raw.githubusercontent.com/mdoery/react-radio-list/master/react-radio-list.png "app has three radio buttons")
 
 ## Other info
 
