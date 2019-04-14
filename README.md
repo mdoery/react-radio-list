@@ -4,6 +4,12 @@ This project demonstrates [lifting state up](https://reactjs.org/docs/lifting-st
 
 The App class maintains state, higher up the DOM hierarchy. Radio buttons do not maintain their own state; they are "instructed" how to be set by props, which are sent from the parent.
 
+When the user clicks a radio button, the changed value is lifted up through several layers of classes into the App. If the app were fleshed out, this state might be saved to a datastore on a server. In this case, it's just stored as state and redisplayed in the browser.
+
+Here is a view:
+
+[view](https://raw.githubusercontent.com/mdoery/react-radio-list/master/react-radio-list.png)
+
 ## Other info
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
